@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+	<style>
+	body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+		h1 {
+    font-size: 36px;
+    color: #229944;
+}
+
+p {
+    font-size: 18px;
+    line-height: 2;
+    color: #999;
+}
+	</style>
+	<meta charset="utf-8">
+	<title>اتصل بنا</title>
+</head>
+<body>
+<img src="{{ url_for('static', filename='image.png') }}">
+<ul>
+	<li><a href="{{ url_for('about') }}">عن الموقع</a> </li>
+	<li><a href="{{ url_for('index') }}">الرئيسية</a></li>
+</ul>
+<h1>اتصل بنا</h1>
+<p>يمكنك التواصل معنا لمزيد من المعلومات حول الموقع</p>
+</body>
+</html>
